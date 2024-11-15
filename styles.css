@@ -145,3 +145,166 @@ body {
     justify-content: center;
     gap: 2rem;
 }
+.seccion_descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 40px;
+    background-color: var(--fondo-primario-transparente);
+    border-radius: 20px;
+}
+.seccion_descripcion__porta_retrato{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    background-color: var(--texto-primario);
+    cursor: pointer;
+}
+.seccion_descripcion__imagen{
+    width: 100%;
+    height: 240%;
+    object-fit: cover;
+}
+.seccion_descripcion__info{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    max-height: 300px;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
+.seccion_descripcion__titulo{
+    font-size: var(--sub-titulo-tamanio);
+    padding: 1rem;
+    margin-bottom: 40px;
+}
+.seccion_descripcion__parrafo{
+    font-size: var(--texto-tamanio);
+    color: var(--texto-secundario);
+    text-wrap: pretty;
+}
+/*enlaces*/
+.enlaces{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.enlaces_redes{
+    width: 100%;
+}
+.enlaces_vertical{
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.enlaces__item{
+    list-style: none; /*sirve para eliminar o cambiar el puntito de los items*/
+}
+.enlaces__enlace{
+    font-size: var(--enlaces-tamanio);
+    font-weight: var(--texto-peso-grueso);
+    color: var(--color-primario);
+    text-decoration: none;
+}
+.enlaces__enlace_footer{
+    font-size: var(--enlaces-tamanio);
+    font-weight: var(--texto-peso-fino);
+}
+.enlaces__icono{
+    width: 40px;
+    aspect-ratio: 1;
+    filter: drop-shadow(0px 0px 2px var(--texto-primario));
+}
+/*tarjetas*/
+.contenedor_tarjetas_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    gap: 2rem;
+}
+.tarjeta{
+    max-width: 600px;
+    height: 300px;
+    background-color: var(--fondo-primario-transparente);
+    border-radius: 0.375rem;
+    box-shadow: 0 0 8px var(--fondo-primario-transparente);
+    overflow: hidden;
+    display: flex;
+}
+.tarjeta__contenido{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.tarjeta__contenido .boton{
+    align-self: flex-end;
+}
+.tarjeta__titulo{
+    font-size: var(--sub-titulo-tamanio);
+}
+.tarjeta__divisor{
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primario);
+}
+.tarjeta__parrafo{
+    font-size: var(--texto-primario);
+    color: var(--texto-secundario);
+    overflow: auto;
+    flex-basis: 150px;
+    text-wrap: pretty;
+}
+.tarjeta__imagen{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+/*pie de pagina*/
+.pie_de_pagina{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 20px;
+    padding-top: 3rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--fondo-primario);
+    background: linear-gradient(
+        180deg,
+        var(--fondo-primario) 0%,
+        var(--fondo-secundario) 100%
+    );
+    border-top: 1px solid var(--texto-secundario);
+}
+.pie_de_pagina__columna{
+    flex-basis: 300px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.pie_de_pagina__copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie_de_pagina__titulo_columna{
+    width: 100%;
+    font-size: var(--texto-primario);
+    font-weight: var(--texto-peso-regular);
+    padding: 4px;
+    border-bottom: 3px solid var(--texto-secundario);
+}
